@@ -24,6 +24,19 @@ i:after {
   display: inline-block;
   padding-left: 1em;
 }
+.nav_top .img {
+  background-clip: border-box;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+  background-image: url("../images/me.jpg");
+  background-position: center top;
+  background-size: 10em auto;
+  top: 30%;
+  left: 30%;
+  z-index: 2;
+}
 .nav_top {
   background: #d3cb9b;
   height: 20em;

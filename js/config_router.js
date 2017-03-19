@@ -2,6 +2,11 @@ angular.module('app').config(['$stateProvider','$urlRouterProvider',function ($s
     $urlRouterProvider.otherwise("/index");
     $stateProvider.state("index",{
         url:"/index",
-        templateUrl:"tpls/index.html"
+        templateUrl:"tpls/index.html",
+        resolve:{
+            deps:['$ocLazyLoad',function ($ocLazyLoad) {
+                $ocLazyLoad.load(['js/controllers/main.js'])
+            }]
+        }
     })
 }])
