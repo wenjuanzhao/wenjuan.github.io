@@ -6,7 +6,7 @@ body {
   font-family: 'Microsoft Yahei','微软雅黑',Arial,'Hiragino Sans GB','宋体';
   color: #555;
 }
-img{
+img,p,ul,li,a,i{
   margin: 0;padding: 0;
 }
 
@@ -22,6 +22,9 @@ h6, .h6 {
   color: #333;
 }
 a{
+  text-decoration: none;color: #666;cursor: pointer;
+}
+a:hover{
   text-decoration: none;
 }
 ul{
@@ -31,13 +34,37 @@ body{
   background: url("../image/bg.png") ;
 }
 .container{
-  margin: 0 auto;
+  margin: 0 auto;position: relative;overflow: hidden;
+}
+.logo{
+  background: url("../image/yezi.png") no-repeat;position: absolute;top: 0;left: -50px;width: 20%;height: 100px;background-size:cover ;
 }
 .ben{
-  padding: 0;margin: 0;
+  padding: 0;margin: 0;position: relative;
+}
+.lan{
+  position: relative;
+}
+.lan header{
+  background: url("../image/lan.png") no-repeat;height: 100px;width: 100%;
+}
+.lan .body{
+  background: url("../image/body.png")  ;width: 100%;background-position:-1px -100px;background-repeat:no-repeat repeat ;
+}
+.lan .body li{
+  height: 30px;line-height: 30px;text-align: center;border-bottom: 1px solid #C2BBA4;
+  margin: 0 20px;
+}
+
+.lan footer{
+  background: url("../image/lan.png") no-repeat;height: 152px;width: 100%;background-position:0 -320px;
 }
 nav{
-  margin: 20px;width: 100%;display: table!important;
+  padding: 20px;width: 100%;display: table!important;position: relative;
+
+}
+.ben_img{
+
 }
 nav .nav-item{
    display: table-cell!important;
