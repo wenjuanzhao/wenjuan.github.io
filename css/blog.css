@@ -53,7 +53,7 @@ body{
   background: url("../image/bg.png") ;
 }
 .container{
-  margin: 0 auto;position: relative;overflow: hidden;
+  margin: 0 auto;position: relative;
 }
 .logo{
   background: url("../image/yezi.png") no-repeat;position: absolute;top: 0;left: -50px;width: 20%;height: 100px;background-size:cover ;
@@ -85,12 +85,15 @@ nav{
 .ben_img{
    position: relative;z-index: 2;
 }
+
 .content1{
   position: absolute;
-  z-index: 3;top:9rem;left: 0;display: block;!important;padding: 0 2rem;width: 100%;
+  z-index: 3;left: 0;display: block;!important;width: 100%;
+  background: url("../image/ben.png");
+  background-size: cover;padding: 0 3rem;
 }
 .content_item{
-  border:1px solid red;
+  border-bottom: 2px dashed #C2BBA4;padding-bottom: 1rem;margin-bottom: 1rem;
 }
 .content_item .title1{
   color: green;font-size: 2rem;
@@ -100,4 +103,7 @@ nav{
 }
 nav .nav-item{
    display: table-cell!important;
+}
+.message{
+  margin-top: 1rem;
 }
