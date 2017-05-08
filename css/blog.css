@@ -1,7 +1,26 @@
 /*
  * Globals
  */
-
+@media screen and (max-width: 1800px) {
+  html {
+    font-size: 20px;!important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 16px;!important;
+  }
+}
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 14px;!important;
+  }
+}
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 10px;!important;
+  }
+}
 body {
   font-family: 'Microsoft Yahei','微软雅黑',Arial,'Hiragino Sans GB','宋体';
   color: #555;
@@ -15,7 +34,7 @@ h2, .h2,
 h3, .h3,
 h4, .h4,
 h5, .h5,
-h6, .h6 {
+h6, .h6 ,pre{
   margin-top: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -64,7 +83,20 @@ nav{
 
 }
 .ben_img{
-
+   position: relative;z-index: 2;
+}
+.content1{
+  position: absolute;
+  z-index: 3;top:9rem;left: 0;display: block;!important;padding: 0 2rem;width: 100%;
+}
+.content_item{
+  border:1px solid red;
+}
+.content_item .title1{
+  color: green;font-size: 2rem;
+}
+.content_item .message{
+  font-size: 1rem;
 }
 nav .nav-item{
    display: table-cell!important;
